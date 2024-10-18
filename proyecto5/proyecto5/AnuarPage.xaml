@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="proyecto5.AnuarPage"
+             Title="AnuarPage">
+    <VerticalStackLayout>
+        <StackLayout Padding="20">
+            <Label Text="Bienvenido a la página Anuar"
+               FontSize="Large"
+               HorizontalOptions="Center" />
+
+            <Label Text="Formulario de Registro"
+               FontSize="Large"
+               HorizontalOptions="Center"
+               Margin="0,20,0,20" />
+
+            
+            <Label Text="Nombre" />
+            <Entry x:Name="entryNombre"
+               Placeholder="Ingresa tu nombre" />
+
+            
+            <Label Text="Correo Electrónico" />
+            <Entry x:Name="entryCorreo"
+               Placeholder="Ingresa tu correo"
+               Keyboard="Email" />
+
+            
+            <Label Text="Contraseña" />
+            <Entry x:Name="entryContrasena"
+               Placeholder="Ingresa tu contraseña"
+               IsPassword="True" />
+
+            
+           
+
+        
+            <Label Text="Género" />
+            <Picker x:Name="pickerGenero">
+                <Picker.Items>
+                    <x:String>Masculino</x:String>
+                    <x:String>Femenino</x:String>
+                    <x:String>Otro</x:String>
+                </Picker.Items>
+            </Picker>
+
+           
+            <Button Text="Enviar"
+                
+                BackgroundColor="LightBlue"
+                TextColor="White"
+                Margin="0,20,0,0" />
+        </StackLayout>
+    </VerticalStackLayout>
+</ContentPage>
