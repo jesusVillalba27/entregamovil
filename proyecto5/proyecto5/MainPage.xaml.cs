@@ -1,4 +1,6 @@
-﻿namespace proyecto5
+﻿using TuAplicacion;
+
+namespace proyecto5
 {
     public partial class MainPage : ContentPage
     {
@@ -9,16 +11,9 @@
             InitializeComponent();
         }
 
-        private void OnCounterClicked(object sender, EventArgs e)
+        private async void OnCounterClicked(object sender, EventArgs e)
         {
-            count++;
-
-            if (count == 1)
-                CounterBtn.Text = $"Clicked {count} time";
-            else
-                CounterBtn.Text = $"Clicked {count} times";
-
-            SemanticScreenReader.Announce(CounterBtn.Text);
+            await Navigation.PushAsync(new Pater());
         }
     }
 
