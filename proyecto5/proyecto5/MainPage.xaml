@@ -3,6 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="proyecto5.MainPage">
 
+
     <ScrollView>
         <VerticalStackLayout
             Padding="30,0"
@@ -25,10 +26,10 @@
                 SemanticProperties.Description="Welcome to dot net Multi platform App U I" />
 
             <Button
-                x:Name="CounterBtn"
-                Text="Click me" 
-                SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="OnCounterClicked"
+                x:Name="NavigateBtn"
+                Text="Go to Second Page"
+                SemanticProperties.Hint="Navigates to the second page"
+                Clicked="OnNavigateButtonClicked"
                 HorizontalOptions="Fill" />
         </VerticalStackLayout>
     </ScrollView>
