@@ -4,9 +4,40 @@
              x:Class="proyecto5.jesus"
              Title="jesus">
     <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+        <ScrollView>
+            <VerticalStackLayout
+            Padding="20"
+            Spacing="15">
+
+                <!-- Nombre -->
+                <Label Text="Nombre:"
+                   FontSize="Medium" />
+                <Entry Placeholder="Escribe tu nombre" />
+
+                <!-- Correo Electrónico -->
+                <Label Text="Correo Electrónico:"
+                   FontSize="Medium" />
+                <Entry Placeholder="Escribe tu correo electrónico"
+                   Keyboard="Email" />
+
+                <!-- Teléfono -->
+                <Label Text="Teléfono:"
+                   FontSize="Medium" />
+                <Entry Placeholder="Escribe tu número de teléfono"
+                   Keyboard="Telephone" />
+
+                <!-- Comentarios -->
+                <Label Text="Comentarios:"
+                   FontSize="Medium" />
+                <Editor Placeholder="Escribe tus comentarios aquí"
+                    HeightRequest="100" />
+
+                <!-- Botón Enviar -->
+                <Button Text="Enviar"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Center" />
+
+            </VerticalStackLayout>
+        </ScrollView>
     </VerticalStackLayout>
 </ContentPage>
